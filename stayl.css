@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+}
+header h1 {
+  margin: 10px 0;
+}
+/* (Navbar) */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: #367c39;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tips-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tip {
+  background-color: #e0f2e9;
+  padding: 15px;
+  margin: 10px;
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.tip:hover {
+  transform: scale(1.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form input,
+form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+form button:hover {
+  background-color: #367c39;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+footer a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .tips-container {
+    flex-direction: column;
+  }
+  .tip {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
